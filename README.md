@@ -50,5 +50,5 @@ F1-Score (Negatif): [0.78]
 F1-Score (Positif): [0.77]
 
 🚀 App Deployment
-Aplikasi telah di-deploy menggunakan Gradio dan dijalankan di Google Cloud Run. Kamu bisa mencoba model ini secara interaktif melalui tautan berikut:
+Aplikasi telah di-deploy menggunakan Gradio dan dijalankan di Hugging Face. Kamu bisa mencoba model ini secara interaktif melalui tautan berikut:
 https://huggingface.co/spaces/elw354/sentimen-tokopedia
