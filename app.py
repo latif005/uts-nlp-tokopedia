@@ -21,6 +21,7 @@ stemmer = factory_stem.create_stemmer()
 def clean_text(text):
     text = text.lower()
     text = re.sub(r'http\S+|www\S+|@\w+|#\w+|[^a-z\s]', '', text)
+    text = re.sub(r'([a-z])\1+', r'\1', text)
     tokens = word_tokenize(text)
     # Catatan: Di deployment kita skip stopword agar ringan, langsung stemming
     tokens = [stemmer.stem(word) for word in tokens]
